@@ -1,4 +1,4 @@
-const apiKey = "key here";
+const apiKey = "fdd6234a0da67e8896c2790856616d04";
 const main = document.getElementById('main');
 const form = document.getElementById('form');
 const search = document.getElementById('search');
@@ -15,3 +15,17 @@ async function getWeatherByLocation(city){
       addWeatherToPage(respData);
      
 }
+function addWeatherToPage(data){
+    const temp = Ktoc(data.main.temp);
+
+    const weather = document.createElement('div')
+    weather.classList.add('weather');
+    weather.innerHTML = `
+    <h2><img src="https://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png" /> ${temp}°C <img src="https://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png" /></h2>
+    <small>${data.weather[0].main}</small>
+    
+    `;
+
+   main.innerHTML= "";
+     main.appendChild(weather);
+};
