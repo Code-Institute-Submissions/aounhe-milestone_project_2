@@ -5,3 +5,18 @@
     --text: #525791;
     --highlight: #c5a240;
 }
+.screen {
+    border: 5px solid var(--text);
+    border-radius: 10px;
+    background-color: var(--screen);
+    width: 90%;
+    height: 90%;
+    padding: 10px;
+    margin: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    justify-items: center;
+    align-items: center;
+    text-align: center;
+}
