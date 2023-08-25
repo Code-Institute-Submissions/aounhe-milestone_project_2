@@ -6,6 +6,7 @@ const error404 = document.getElementById('.not-found');
 
 const url = (city)=> `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}`;
 
+
 async function getWeatherByLocation(city){
      
     const resp = await fetch(url(city), {
@@ -23,9 +24,25 @@ function addWeatherToPage(data){
     weather.innerHTML = `
     <h2><img src="https://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png" /> ${temp}°C <img src="https://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png" /></h2>
     <small>${data.weather[0].main}</small>
-    
+
     `;
 
    main.innerHTML= "";
      main.appendChild(weather);
 };
+function Ktoc(K){
+    return Math.floor(K - 273.15);
+}
+
+
+
+form.addEventListener('submit',(e) =>{
+   e.preventDefault();
+
+   const city = search.value;
+
+   if(city){
+       getWeatherByLocation(city)
+   }
+
+});
