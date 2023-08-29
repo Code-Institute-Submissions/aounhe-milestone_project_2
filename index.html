@@ -3,28 +3,47 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <title>Weather</title>
     <link rel="stylesheet" href="assets/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
 </head>
 <body>
+    <ul class="nav justify-content-end">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">contact</a>
+        </li>
+        
+      </ul>
     <!--header-->
     <header class="header">
         <h1 class="title home">Weather check</h1>
     </header>
     <!--main-->  
-    <main id="main">
-    <div class="main">
-        <h2>Welcome to <span class="title">Weather Check</span></h2>
+
+    <section class="main1">
+        <h2>Welcome to Weather Check</h2>
             <p>
-            <span class="title">Weather Check</span> has local and international weather forecasts from the most accurate weather forecasting technology featuring up to the minute weather reports
+            Weather Check has local and international weather forecasts from the most accurate weather forecasting technology featuring up to the minute weather reports
             </p>
             <form id="form">
-                <input type="text" id="search" placeholder="Search for a place" autocomplete="off">
+            <input type="text" id="search" placeholder="Search for a place" autocomplete="off">
             </form>
-    </div>
-    <!--contact secreen-->
-    <div class="contact screen">
+            <div class="container">  
+               
+            <button onClick="window.location.reload();">Search Again</button>   
+            </div>
+              
+    </section>
+    
+     <!--contact secreen-->
+    
+    <section class="screen">
         <form id="contact-form">
             <h2 class="title">Get In Touch!</h2>
             <p>Please complete the form below to submit any feedback you may have on Weather check</p>
@@ -37,8 +56,9 @@
                 <button type="reset" class="reset button">Clear Form</button>
             </div>
         </form>
-    </div>
-    </main>
+    </section>
+    
+
     <!--social media-->
     <footer class="footer">
         <a href="https://www.facebook.com/" target="_blank" class="social">
@@ -55,6 +75,9 @@
         </a>
     </footer>
     <script src="https://kit.fontawesome.com/1704febde4.js" crossorigin="anonymous"></script>
-    <script src="assets/app.js"></script>   
+    <script src="assets/app.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+  </body>   
+
 </body>
 </html>
