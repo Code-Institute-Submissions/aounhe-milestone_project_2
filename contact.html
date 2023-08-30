@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Weather</title>
+    <link rel="stylesheet" href="assets/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+</head>
+<body>
+     <!--header-->
+<header class="header">
+    <!-- Navbar content -->
+        <nav class="navbar" style="background-color: #d2cab8;">
+                  <a class="logo">Weather check</a>
+            <ul class="nav justify-content-end">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="contact.html">contact</a>
+                </li>
+            </ul> 
+        </nav>
+</header>
+    <!--main-->  
+<main>
+    <div class="intro2">
+        <h1>Get In Touch!</h1>
+        <p>Please complete the form below to submit any feedback you may have on Weather check</p>
+    </div>
+    <div class="screen">
+        <form id="contact-form">
+            
+            <input type="text" name="user_name" class="input" placeholder="Name" required>
+            <input type="email" name="user_email" class="input" placeholder="Email" required>
+            <textarea name="user_message" id="message" class="input" placeholder="Type your message here..."
+                required></textarea>
+            <div class="form-buttons">
+                <input type="submit" class="submit button" value="Send!">
+                <button type="reset" class="reset button">Clear Form</button>
+            </div>
+        </form>
+    </div>
+</main>
+    <!--social media-->
+<footer class="footer">
+        <a href="https://www.facebook.com/" target="_blank" class="social">
+            <i class="fa-brands fa-square-facebook" aria-hidden="true"></i>
+            <span class="sr-only">Facebook</span>
+        </a>
+        <a href="https://www.instagram.com/" target="_blank" class="social">
+            <i class="fa-brands fa-instagram" aria-hidden="true"></i>
+            <span class="sr-only">Instagram</span>
+        </a>
+        <a href="https://www.youtube.com/" target="_blank" class="social">
+            <i class="fa-brands fa-youtube" aria-hidden="true"></i>
+            <span class="sr-only">Youtube</span>
+        </a>
+</footer>
+    <script src="https://kit.fontawesome.com/1704febde4.js" crossorigin="anonymous"></script>
+    <script src="assets/app.js"></script>
+</body>
+</html>
