@@ -2,40 +2,56 @@
 :root {
     --background: #ffffff;
     --screen: rgba(202, 191, 145, 0.2);
-    --text: #525791;
+    --text: #cbae6b;
     --highlight: #c5a240;
 }
-.screen {
-    border: 5px solid var(--text);
-    border-radius: 10px;
-    background-color: var(--screen);
-    width: 90%;
-    height: 90%;
-    padding: 10px;
-    margin: 40%;
+
+.header .logo {
+    font-size: 25px;
+    font-family: "Pathway Extreme", sans-serif;
+    color: #000;
+    text-decoration: none;
+    margin-left: 30px;
+  }
+.intro {
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
-    justify-items: center;
+    justify-content: center;
     align-items: center;
-    text-align: center;
-}
-.header h1, .footer {
     width: 100%;
-    min-height: 10vh;
+    height: 520px;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%), url("https://images.unsplash.com/photo-1692863127448-65330ae24fc2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2462&q=80");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+.intro h1, .intro2 h1 {
+    font-family: sans-serif;
+    font-size: 60px;
+    color: #fff;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin: 0;
+  }
+.intro p, .intro2 p {
+    font-size: 20px;
+    color: #d1d1d1;
+    text-transform: uppercase;
+    margin: 20px 0;
+  }
+  .intro2 {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
-    justify-content: space-evenly;
-}
-.title.home:hover,
-.title:hover,
-.social:hover {
-    color: var(--highlight);
-    cursor: pointer;
-    text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
-}
-form .input {
+    width: 100%;
+    height: 520px;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%), url("https://images.unsplash.com/photo-1693287528551-b3c3a6b28843?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2670&q=80");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  form .input {
     color: var(--text);
     background-color: var(--background);
     border: 2px solid var(--text);
@@ -45,23 +61,107 @@ form .input {
     padding: 5px;
     font-family: "Pathway Extreme", sans-serif;
 }
-body {
-    margin: 0;
-    font-family: "Poppins", sans-serif;
-    background-color: linear-gradiet(300deg, #809bd0, #909d9d);
+.screen {
+    border: 5px solid var(--text);
+    border-radius: 10px;
+    background-color: var(--screen);
+    width: 90%;
+    height: 90%;
+    padding: 10px;
+    margin:60px;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
     flex-direction: column;
-   }
-#search {
+    justify-content: space-evenly;
+    justify-items: center;
+    align-items: center;
+    text-align: center;
+}
+#search{
+    margin:80px;
     padding: 1rem;
     border-radius: 25px;
     border: none;
-    background-color: #fff;
+    background-color: rgb(230, 229, 184);
     font-family: inherit;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
     min-width: 300px;
     font-size: 1rem;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+   
 }
+.button-34 {
+    background:  rgb(230, 229, 184);
+    border-radius: 999px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    box-sizing: border-box;
+    color: #040404;
+    cursor: pointer;
+    font-family: inherit;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+    opacity: 1;
+    outline: 0 solid transparent;
+    padding: 8px 18px;
+    touch-action: manipulation;
+    width: fit-content;
+    word-break: break-word;
+    border: 0;
+    align-items: center; 
+}
+.container {
+        margin:50px;
+        align-items: center;
+        height: 48px;
+    }
+.button-34{
+    Display:block;
+   Margin: auto;
+   height: 48px;
+}
+  
+body{
+    background-color: rgb(228, 223, 202);
+}
+   
+
+
+.social:hover {
+    color: var(--highlight);
+    cursor: pointer;
+    text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+.footer {
+    width: 100%;
+    min-height: 10vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    position: fixed;
+    bottom: 0;
+}
+    .social,
+    .contact-button {
+        font-size: 32px;
+    }
+    
+    input:focus {
+        outline: none;
+    }
+    .weather {
+        text-align: center;
+        font-size: 2rem;
+        align-items: center;
+        Display:block;
+    }
+    .weather h2 {
+        margin-bottom: 0;
+        display: flex;
+        align-items: center;
+        Display:block;
+    } 
+    .weather img{ 
+        transform: scale(1.5); } 
